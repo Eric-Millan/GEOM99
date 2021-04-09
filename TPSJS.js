@@ -91,5 +91,6 @@ function initMap() {
     marker.addListener("click", () => {
         GSIW.open(map, marker)
     });
+    
     }
 
