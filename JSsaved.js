@@ -61,7 +61,7 @@
 
     // Gowsigan Sritharan
 
-    const GSLocation = {lat: 123, lng: 123} // Get location
+    const GSLocation = {lat: 43.65246364298885, lng: -79.38365280943889} // Toronto 43.65246364298885, -79.38365280943889
     const marker = new google.maps.Marker({
     position: GSLocation,
     map: map,

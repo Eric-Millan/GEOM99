@@ -70,6 +70,24 @@ const EMillanIW = new google.maps.InfoWindow({
     content: EMillanContent,
 });
 
+// Gowsigan Sritharan
+
+const GSLocation = {lat: 43.65246364298885, lng: -79.38365280943889} // Toronto 43.65246364298885, -79.38365280943889
+GSmarker = new google.maps.Marker({
+position: GSLocation,
+map: map,
+});
+
+GSmarker.addListener("click", () => {
+    GSIW.open(map, GSmarker)
+});
+const GSContent = 
+'<div><h2>Gowsigan Sritharan</h2></div>' +
+'<div>Applications Specialist</div>';
+
+const GSIW = new google.maps.InfoWindow({
+    content: GSContent,
+});
 
 }
 
