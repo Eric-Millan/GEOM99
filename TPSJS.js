@@ -10,5 +10,25 @@ function initMap() {
         zoom: 8
     });
 
-    }
+// Marker for Dale
+
+const DaleLocation = {lat: 43.91176793798334, lng: -78.68743210405533} // Bowmanville 43.91176793798334, -78.68743210405533
+Dalemarker = new google.maps.Marker({
+position: DaleLocation,
+map: map,
+});
+
+Dalemarker.addListener("click", () => {
+    DaleIW.open(map, Dalemarker)
+});
+
+const DaleContent = 
+'<div><h2>Dale Langford</h2></div>' +
+'<div>Cartographic Specialist</div>';
+
+const DaleIW = new google.maps.InfoWindow({
+    content: DaleContent,
+});
+
+}
 
