@@ -2,7 +2,7 @@
 
 // Initialize and add the map
 
-function initMap() {
+function initMap(map) {
     const map = new google.maps.Map(document.getElementById("map"), {
         // Ontario
         center: { lat: 43.943726362759605, lng: -78.70952221169588 },
