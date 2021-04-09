@@ -52,15 +52,12 @@ li a:focus{
 	background-color:#fafafa;
 	color:#020202;
 	font-weight: bold;
-
 }
-
 
 li a:hover{
 	background-color:#9ecae1;
 	color:#181717;
 	font-weight: bold;
-
 }
 
 .active{
