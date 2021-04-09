@@ -162,6 +162,13 @@ li a:hover{
 	text-align:center;
 }
 
+.block4 {
+    padding: 0.5vw;
+	margin-top: 0;
+	margin-left: 20vw;
+	margin-right:20vw; 
+}
+
 
 
 /*   ################# MAP #################  */
