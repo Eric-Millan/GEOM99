@@ -50,6 +50,26 @@ const EMcIW = new google.maps.InfoWindow({
     content: EMcContent,
 });
 
+// Eric Millan
+
+const EMillanLocation = {lat: 44.23047096753822, lng: -76.48123839624441} // Kingston 44.23047096753822, -76.48123839624441
+EMillanmarker = new google.maps.Marker({
+position: EMillanLocation,
+map: map,
+});
+
+const EMillanIW = new google.maps.InfoWindow({
+    content: EMillanContent,
+});
+
+const EMillanContent = 
+'<div><h2>Eric Millan</h2></div>' +
+'<div>Applications Specialist</div>';
+
+EMillanmarker.addListener("click", () => {
+    EMillanIW.open(map, EMillanmarker)
+});
+
 
 
 }
