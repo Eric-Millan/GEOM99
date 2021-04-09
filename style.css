@@ -315,6 +315,12 @@ li a:hover{
 	font-size:18px;
 }
 
+.projectimagesubtext {
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+}
+
 
 
 /* ################# Images ################# */
