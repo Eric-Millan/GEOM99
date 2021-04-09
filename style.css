@@ -166,7 +166,8 @@ li a:hover{
     padding: 0.5vw;
 	margin-top: 0;
 	margin-left: 20vw;
-	margin-right:20vw; 
+	margin-right:20vw;
+    flex: auto; 
 }
 
 
@@ -258,10 +259,16 @@ li a:hover{
 }
 
 .text1{
-	font-size:25px;	
+	font-size:22px;	
+    text-align: justify;
 }
 .text2{
-	margin-top: 0;
+    font-size:18px;	
+	text-align: justify;
+}
+
+.text3{
+    font-size:15px;	
 	text-align: justify;
 }
 
