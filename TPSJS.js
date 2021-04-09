@@ -58,18 +58,17 @@ position: EMillanLocation,
 map: map,
 });
 
-const EMillanIW = new google.maps.InfoWindow({
-    content: EMillanContent,
+EMillanmarker.addListener("click", () => {
+    EMillanIW.open(map, EMillanmarker)
 });
 
 const EMillanContent = 
 '<div><h2>Eric Millan</h2></div>' +
 '<div>Applications Specialist</div>';
 
-EMillanmarker.addListener("click", () => {
-    EMillanIW.open(map, EMillanmarker)
+const EMillanIW = new google.maps.InfoWindow({
+    content: EMillanContent,
 });
-
 
 
 }
