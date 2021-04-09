@@ -172,6 +172,9 @@ li a:hover{
 	margin-top: 0;
 	margin-left: 20vw;
 	margin-right:20vw;
+	border-bottom:solid;
+	border-color: #000000;
+	border-width: 1pt;
 }
 
 .block5 {
@@ -194,7 +197,7 @@ li a:hover{
   }
 
 
-/*   ################# MEDIA #################  */
+/*   ################# BLOCK MEDIA #################  */
 @media only screen and (max-width: 1000px) {
 
 	.blockTitle{
@@ -211,6 +214,24 @@ li a:hover{
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	.block4 {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 0;
+		margin-left: 20vw;
+		margin-right:20vw;
+	}
+	
+	.block5 {
+		width: auto;
+		margin-top: 0;
+		margin-left: 5vw;
+		margin-right:5vw;
+	}
+}
 
 @media only screen and (max-width: 500px) {
 
@@ -230,6 +251,7 @@ li a:hover{
 
 .title1 {
 	font-size: 30px;
+	color:#000000
 }
 
 .title2{
@@ -244,6 +266,12 @@ li a:hover{
 	width:60%;
 	margin: auto;
 	font-size: 30px;
+	color:#000000
+}
+
+.title4 {
+	font-size:20pt;
+	color:#000000
 }
 
 @media only screen and (max-width: 500px) {
@@ -281,6 +309,10 @@ li a:hover{
 .text3{
     font-size:15px;	
 	text-align: justify;
+}
+
+.text4{
+	font-size:18px;
 }
 
 
