@@ -10,6 +10,7 @@ body {
 /* ################# Header Image ################# */
 .header{
 	background-image: url(images/Toronto_Ontario.jpg);
+	display: cover;
 	margin:0;
 	padding:0;
 	height:10vw
