@@ -13,9 +13,13 @@ function initMap() {
 // Marker for Dale
 
 const DaleLocation = {lat: 43.91176793798334, lng: -78.68743210405533} // Bowmanville 43.91176793798334, -78.68743210405533
-const marker = new google.maps.Marker({
+Dalemarker = new google.maps.Marker({
 position: DaleLocation,
 map: map,
+});
+
+Dalemarker.addListener("click", () => {
+    DaleIW.open(map, Dalemarker)
 });
 
 const DaleContent = 
@@ -26,9 +30,5 @@ const DaleIW = new google.maps.InfoWindow({
     content: DaleContent,
 });
 
-Dalemarker.addListener("click", () => {
-    DaleIW.open(map, Dalemarker)
-});
-
-    }
+}
 
