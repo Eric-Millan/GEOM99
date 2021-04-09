@@ -15,8 +15,8 @@
         content: DaleContent,
     });
     
-    marker.addListener("click", () => {
-        DaleIW.open(map, marker)
+    Dalemarker.addListener("click", () => {
+        DaleIW.open(map, Dalemarker)
     });
     
     // Marker for EricMcNeil
@@ -35,8 +35,8 @@
         content: EMcContent,
     });
     
-    marker.addListener("click", () => {
-        EMcIW.open(map, marker)
+    EMcmarker.addListener("click", () => {
+        EMcIW.open(map, EMcmarker)
     });
 
     // Eric Millan
@@ -55,8 +55,8 @@
         content: EMillanContent,
     });
     
-    marker.addListener("click", () => {
-        EMillanIW.open(map, marker)
+    EMillanmarker.addListener("click", () => {
+        EMillanIW.open(map, EMillanmarker)
     });
 
     // Gowsigan Sritharan
@@ -75,6 +75,6 @@
         content: GSContent,
     });
     
-    marker.addListener("click", () => {
-        GSIW.open(map, marker)
+    GSmarker.addListener("click", () => {
+        GSIW.open(map, GSmarker)
     });
