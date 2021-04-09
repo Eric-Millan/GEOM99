@@ -5,9 +5,9 @@
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         // Ontario
-        center: { lat: 43.943726362759605, lng: -78.70952221169588 },
+        center: { lat: 43.49443563253403, lng: -79.08434075655194 },
         mapTypeId: "terrain",
-        zoom: 10
+        zoom: 8
     });
 
     }
