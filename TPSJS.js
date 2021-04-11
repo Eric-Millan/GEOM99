@@ -72,7 +72,7 @@ const EMillanIW = new google.maps.InfoWindow({
 
 // Gowsigan Sritharan
 
-const GSLocation = {lat: 43.65246364298885, lng: -79.38365280943889} // Toronto 43.65246364298885, -79.38365280943889
+const GSLocation = {lat: 43.725621583524195, lng: -79.76508180498831} // Brampton 43.725621583524195, -79.76508180498831
 GSmarker = new google.maps.Marker({
 position: GSLocation,
 map: map,
