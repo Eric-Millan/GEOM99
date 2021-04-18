@@ -360,6 +360,22 @@ li a:hover{
 	height: 100%;
 }
 
+.projectimage2 {
+	width: 40vw;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.projectimage3 {
+	width: 20vw;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
 .logo{
 	width: 20vw;
 	height: 100%;
