@@ -148,25 +148,68 @@
 <div class="block1">
 	<p class="title4"><a id="geocortexSection" > Geocortex HTML5 Web Viewer: </a></p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">Geocortex 5 Web was chosen as our initial solution for our problem based on our understanding of the platform being 
+			an enhanced method to display Esri web maps with greater options of customization (admittedly, our understanding of Geocortex as a whole 
+			was very limited prior to our development work). Additionally, Geocortex products are an important aspect of our collaborative project which 
+			also factored in to why it was chosen so that we may gain valuable experience. </p>
 	</div>
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Initial Set-up and Configuration:</p>
 	<div>
 		<img class="projectimage" alt="Configured ESRI Dashboard" src="images/dashboards.png">
 	</div>
 	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
-	<p class = homeSubHead> Sub Header</p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">Prior to developing the Geocortex solution, we first created a basic vision of our desired layout. After the creation of the 
+			basic web map for integration with the application, Geocortex Web development could begin. </p>
+		<p class="generalText">Layout design and configuration was achieved by selecting and dragging components into the layout pane. The basic structure, 
+			or arrangement of the layout is created by adding Columns, Rows, Tabs, and Panels which are termed “Layout Components”. The sizing, control over 
+			sizing, and visibility can all be configured for each component added.</p>
+		<p class="generalText">During Layout Component placement, we concurrently added “Map Components”. These are the features that relate to interactivity 
+			and exploration of the map as the name suggests. Several Map Components are available, however, only a portion were used based on the needs as defined 
+			by the problem statement. Similar to the Layout Components, each Map Component can be configured but with added functionality in the form of Feature Actions. 
+			Feature Actions are what occurs after features in the map are identified (i.e results). These are pre-defined by Geocortex but do provide the option for 
+			modification (although no modifications were made in our solution; see Challenges section). For each Map Component added, Feature Actions were added/removed 
+			accordingly.</p>
+		<p class="generalText">After we achieved a layout complete with Feature Actions we were happy with, the final step was to test the application from the perspective 
+			of a user. This was important in identifying where certain functionality was not working as intended to direct further work and modification.</p>
 	</div>
 
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Challenges Along the Way:</p>
 	<div>
 		<img class="projectimage" alt="ESRI Dashboard" src="images/dashboards.png">
 	</div>
 	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">One of the first challenges we encountered was what we considered to be a lack of available documentation to aid with development. Help 
+			documentation that we have come to expect for Esri products are in stark contrast to what we were able to find for Geocortex. This presented us with the challenge 
+			of having to rely more on experimentation to develop a stronger understanding.</p>
+		<p class="generalText">Although this was a relatively minor challenge, even just learning how to utilize components in creating the layout was a challenging at first. 
+			The process of dragging components to the layout pane, learning how the hierarchy of rows and columns worked, and configuring their sizes and visibility took some 
+			time to become comfortable with. We also encountered a bug which prevented the map component (arguably the most important one) from allowing us to select a map! 
+			This bug occurs (in v5.5) when a blank layout is created, but we were fortunate to find forum confirming that this was indeed a bug and that a workaround existed 
+			(delete all components except for the map component from one of the default layout options).</p>
+		<p class="generalText">Utilizing Feature Actions was source of major time investment. As mentioned, going into development we had little knowledge of Geocortex. Initially, 
+			we assumed that Feature Actions would have the ability to customize many different aspects of interacting with features such as customizing drawn polygon colours, the 
+			attributes that display when a feature is selected, etc. We gathered as much documentation as we find on this topic (some of the best resources ended up being short 
+			YouTube videos produced by Geocortex), which certainly helped, but did not answer all of our questions.</p>
+		<p class="generalText">It became clear to us that to achieve some of the functionality we had envisioned would require the use of Workflows. As we began researching how to 
+			utilize Workflows, it also became clear that this would not be a simple task. Our problem statement did not call for the explicit use of Workflows, and we therefore did 
+			not budget enough time to effectively learn an implement this aspect in to our solution.</p>
+		<p class="generalText">Lastly, we encountered issues with how certain attributes controlled by arcade expression in the web map displayed in Geocortex. For example, an 
+			expression that counts the number of features within a neighbourhood polygon and then displays the result in a popup when the feature is identified did not work in 
+			Geocortex. Again, we were not able to find documentation to assist us with this problem, thus the issue still exists in our solution.</p>
+	</div>
+
+	<p class = homeSubHead>Future Directions:</p>
+	<div>
+		<img class="projectimage" alt="Configured ESRI Dashboard" src="images/dashboards.png">
+	</div>
+	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
+	<div>
+		<p class="generalText">Our development work in Geocortex Web has shown us the difficulty that comes when you cannot rely on copious sources of documentation and guides. 
+			Geocortex can provide so much more than what we produced but will require us to invest significantly more time into exploration and testing to be able to capitalize on it. 
+			A good first step will be to dedicate ample time to learning how to implement Workflows, beginning with a relatively simple example and building our knowledge and experience 
+			from there.</p>
 	</div>
 </div>
 
