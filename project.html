@@ -47,7 +47,7 @@
 	<div>
 		<p class="generalText">Arcade is an in house ESRI programming language which can handle lightweight expressions across a wide range of products including ArcGIS Pro, ArcGIS Runtime and ArcGIS Online. It allows developers to create expressions which interact with datasets and their geographic qualities. Functions such as “intersect” allows a developer to create relationships between datasets based on their geographic quality. Since it is likely that our group will be using this language to some extent in our collaborative project, it was explored as part of our Public Safety Web Solution. </p>
 	</div>
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Initial Set-up and Configuration</p>
 	<div>
 		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_1.JPG">
 	</div>
@@ -67,9 +67,11 @@
 		<p class="generalText">In this example code, I want the Arcade expression to return all of the names of health services, within the neighborhood polygon that is clicked on to generate the popup. This particular expression uses the intersect function to return only the records which are within a polygon, and then iterates through each record and creates an array (essentially an Arcade version of a list) of these location names. It then returns this array as an output. This is one of several code expressions which run behind the scenes whenever a pop-up is generated. </p>
 		<p class="generalText">Finally, to configure the popup we return to the configure pop-ups screen and navigate to out text field. In this environment, we can create basic design choices (color, font, etc) and insert the name of the code expressions we want as a form of dynamic tests. The expression we built previously for Health Service names is represented by {expression/expr6}. When we save at this screen and open a popup, we now see a list of the health services within the neighborhood presented in an easy-to-read format. </p>
 		<p class="generalText">Arcade is a lightweight language which can perform simple tasks in a web environment, and there is a lot more to explore when it comes to chart design and different functions, however for many applications, it is a good tool to create new ways to understand and explore data. </p>
+		<p class = homeSubHead>Challenges Along the Way:</p>
 		<p class="generalText">Arcade was a new language for us to understand, so there was a bit of a steep learning curve on the different data types it can produce (not exactly like python or JavaScript). For example, adding items to an array includes having an index number associated with it and this concept took some time to understand.  </p>
 		<p class="generalText">Because it is an ESRI specific language, there is a lack of documentation online or good example of effective deployment, and ESRI produced videos could either be very simple (eg. “we have a new language called arcade”) or very complex (“this is the backend development for Arcade, everyone here is an expert programmer right?”). We were able to create some simple expression, but with time, we believe this could be a powerful tool in dashboard customization. </p>
 		<p class="generalText">One challenge which we’d like to resolve is the ability to create summary statistics between layers, as this would be important for our collaborative project and was not something we were able to create.</p>
+		<p class = homeSubHead>Future Directions:</p>
 		<p class="generalText">As we develop our collaborative project with the TPS, we will make use of Arcade Expressions and determine what type of data can be manipulated with it. It has the ability to manipulate visualization and data, so we would like to explore creative different map symbology. Creating summary statistics with the intersect tool is also something which will be important for our final project. For example, it would be great if we were able to show previous year crime statistics side by side with current year and current trajectory. We would also like to explore the custom symbology side of things, such as being able to manipulate the colors used in charts.</p>
 	
 	</div>
