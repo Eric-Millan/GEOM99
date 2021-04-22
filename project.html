@@ -64,7 +64,7 @@
 	<div>
 		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_1.JPG">
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
+	<p class = "projectimagesubtext">Navigating to the Web Map Pop Up Expression Manager</p>
 
 	<div>
 		<p class="generalText">Arcade can be applied in many different ESRI products, but to be targeted in our approach, we worked almost exclusively in the web map pop-up environment. Our web solution consists of polygons representing the neighborhoods of Toronto, ON and points representing public safety resources (health facilities, fire departments and police stations). Our objective was to show information about these services within the pop-up window for each neighborhood. </p>
@@ -72,11 +72,20 @@
 	<div>
 		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_2.JPG">
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
+	<p class = "projectimagesubtext">Navigating to the Web Map Pop Up Expression Manager</p>
 	<div>
 		<p class="generalText">To Access the pop-up expression manager, you click on the layer whose popup will be customized (1) and the click on the configure pop-ups button (2). At this screen, you are presented with several options to customize the content within your pop-up window. We will return to this screen at the end of the process, but first we need to build some expressions. If we click on manage expressions (3) and add expression (4) we can begin to write some Arcade Code. </p>
+	<div>
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_3.JPG">
+	</div>
+		<p class = "projectimagesubtext">Expression Manager and Sample Code</p>
 		<p class="generalText">In this example code, I want the Arcade expression to return all of the names of health services, within the neighborhood polygon that is clicked on to generate the popup. This particular expression uses the intersect function to return only the records which are within a polygon, and then iterates through each record and creates an array (essentially an Arcade version of a list) of these location names. It then returns this array as an output. This is one of several code expressions which run behind the scenes whenever a pop-up is generated. </p>
 		<p class="generalText">Finally, to configure the popup we return to the configure pop-ups screen and navigate to out text field. In this environment, we can create basic design choices (color, font, etc) and insert the name of the code expressions we want as a form of dynamic tests. The expression we built previously for Health Service names is represented by {expression/expr6}. When we save at this screen and open a popup, we now see a list of the health services within the neighborhood presented in an easy-to-read format. </p>
+	<div>
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_5.JPG">
+		<p class = "projectimagesubtext">An examlpe of a customized popup</p>
+	</div>
+		
 		<p class="generalText">Arcade is a lightweight language which can perform simple tasks in a web environment, and there is a lot more to explore when it comes to chart design and different functions, however for many applications, it is a good tool to create new ways to understand and explore data. </p>
 		<p class = homeSubHead>Challenges Along the Way:</p>
 		<p class="generalText">Arcade was a new language for us to understand, so there was a bit of a steep learning curve on the different data types it can produce (not exactly like python or JavaScript). For example, adding items to an array includes having an index number associated with it and this concept took some time to understand.  </p>
