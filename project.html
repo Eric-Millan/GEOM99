@@ -39,31 +39,61 @@
 	<p class = "headerText2">Jump to <a href="#dashboardSection" class="link">Dashboards<a></p>
 	<p class = "headerText2">Jump to <a href="#geocortexSection" class="link">Geocortex<a></p>
 </div>
+		
+<div class="block1">
+	<h1 class="title4"> Introduction </h1>
+	<p class ="generalText"> Currently, the data from the TPS is distributed among various web maps and contains more of a city-wide focus. This in turns leads to a negative user experience as it does not represent public safety information in the neighborhood level. To counter this, the TPS developed the Know Your Neighbourhood (KYN) app which acts as single application for viewing public safety data and information across Toronto neighborhoods. We were tasked with creating a web mapping solution that will allow users to view relevant data and information in a specific Toronto neighborhood, which would also be hosted in a single web environment (via Experience Builder). Moreover, our solution must meet the AODA (Accessibility for Ontarians with Disabilities Act) which is a law, setting out a process for enforcing accessibility standards. </p>
+		
+		<p class ="generalText"> Both mapping solutions we created using Geocortex 5, Experience Builder, Arcade and Dashboards contains neighborhoods of Toronto and relevant public service information pertaining to each neighborhood such as hospital facilities, fire halls and police stations. Arcade programming was used to confiture the pop-ups in the Dashboard environment as well as using the Experience Builder which was used to host both solutions in a single environment. Other meaningful information is displayed within each neighborhood such as population, demographics and census information and these solutions will be shared to the clients, general public and professional users.  </p>
+	
+	<div>
+		<img class="move1" alt="Intro" src="images/intro.png" width = 300px height = 300px;>
+	</div>
+
+<p class ="generalText"> The website containing our project contains a variety of sections that outlining the process undertaken to complete the project as of now. The information on this web page includes the home page which goes over how our project meets the problem statement outlining the ideal, reality, consequence, and the proposal sections. The next section overviews each individual team member and a brief biography of each member. Followed by that includes the project section which goes over the development and documentation of the two web solutions, Dashboards and Geocortex as well as the Arcade programming configuration that was used for Dashboards. The final component of the website is the solutions page which goes over the final two solutions created for our project as of now, the ArcGIS Dashboards and the Geocortex 5 solutions. Challenges for the project and initial setup and configuration of each solution is described as well along with the future directions each solution can be taken in.  </p>
+</div>
 
 <!-- ARCADE -->
 
 <div class="block1">
 	<p class="title4"><a id="arcadeSection" > Arcade and Web Map Pop-Up Configuration: </a></p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">Arcade is an in house ESRI programming language which can handle lightweight expressions across a wide range of products including ArcGIS Pro, ArcGIS Runtime and ArcGIS Online. It allows developers to create expressions which interact with datasets and their geographic qualities. Functions such as “intersect” allows a developer to create relationships between datasets based on their geographic quality. Since it is likely that our group will be using this language to some extent in our collaborative project, it was explored as part of our Public Safety Web Solution. </p>
 	</div>
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Initial Set-up and Configuration:</p>
 	<div>
-		<img class="projectimage" alt="ESRI Dashboard" src="images/dashboards.png">
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_1.JPG">
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
-	<p class = homeSubHead> Sub Header</p>
-	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
-	</div>
+	<p class = "projectimagesubtext">Navigating to the Web Map Pop Up Expression Manager</p>
 
-	<p class = homeSubHead> Sub Header</p>
 	<div>
-		<img class="projectimage" alt="ESRI Dashboard" src="images/dashboards.png">
+		<p class="generalText">Arcade can be applied in many different ESRI products, but to be targeted in our approach, we worked almost exclusively in the web map pop-up environment. Our web solution consists of polygons representing the neighborhoods of Toronto, ON and points representing public safety resources (health facilities, fire departments and police stations). Our objective was to show information about these services within the pop-up window for each neighborhood. </p>
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_2.JPG">
+	</div>
+	<p class = "projectimagesubtext">Navigating to the Web Map Pop Up Expression Manager</p>
+	<div>
+		<p class="generalText">To Access the pop-up expression manager, you click on the layer whose popup will be customized (1) and the click on the configure pop-ups button (2). At this screen, you are presented with several options to customize the content within your pop-up window. We will return to this screen at the end of the process, but first we need to build some expressions. If we click on manage expressions (3) and add expression (4) we can begin to write some Arcade Code. </p>
+	<div>
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_3.JPG">
+	</div>
+		<p class = "projectimagesubtext">Expression Manager and Sample Code</p>
+		<p class="generalText">In this example code, I want the Arcade expression to return all of the names of health services, within the neighborhood polygon that is clicked on to generate the popup. This particular expression uses the intersect function to return only the records which are within a polygon, and then iterates through each record and creates an array (essentially an Arcade version of a list) of these location names. It then returns this array as an output. This is one of several code expressions which run behind the scenes whenever a pop-up is generated. </p>
+		<p class="generalText">Finally, to configure the popup we return to the configure pop-ups screen and navigate to out text field. In this environment, we can create basic design choices (color, font, etc) and insert the name of the code expressions we want as a form of dynamic tests. The expression we built previously for Health Service names is represented by {expression/expr6}. When we save at this screen and open a popup, we now see a list of the health services within the neighborhood presented in an easy-to-read format. </p>
+	<div>
+		<img class="projectimage" alt="ESRI Dashboard" src="images/arcadeimages/arcade_5.JPG">
+		<p class = "projectimagesubtext">An examlpe of a customized popup</p>
+	</div>
+		
+		<p class="generalText">Arcade is a lightweight language which can perform simple tasks in a web environment, and there is a lot more to explore when it comes to chart design and different functions, however for many applications, it is a good tool to create new ways to understand and explore data. </p>
+		<p class = homeSubHead>Challenges Along the Way:</p>
+		<p class="generalText">Arcade was a new language for us to understand, so there was a bit of a steep learning curve on the different data types it can produce (not exactly like python or JavaScript). For example, adding items to an array includes having an index number associated with it and this concept took some time to understand.  </p>
+		<p class="generalText">Because it is an ESRI specific language, there is a lack of documentation online or good example of effective deployment, and ESRI produced videos could either be very simple (eg. “we have a new language called arcade”) or very complex (“this is the backend development for Arcade, everyone here is an expert programmer right?”). We were able to create some simple expression, but with time, we believe this could be a powerful tool in dashboard customization. </p>
+		<p class="generalText">One challenge which we’d like to resolve is the ability to create summary statistics between layers, as this would be important for our collaborative project and was not something we were able to create.</p>
+		<p class = homeSubHead>Future Directions:</p>
+		<p class="generalText">As we develop our collaborative project with the TPS, we will make use of Arcade Expressions and determine what type of data can be manipulated with it. It has the ability to manipulate visualization and data, so we would like to explore creative different map symbology. Creating summary statistics with the intersect tool is also something which will be important for our final project. For example, it would be great if we were able to show previous year crime statistics side by side with current year and current trajectory. We would also like to explore the custom symbology side of things, such as being able to manipulate the colors used in charts.</p>
+	
 	</div>
 </div>
 
@@ -148,25 +178,69 @@
 <div class="block1">
 	<p class="title4"><a id="geocortexSection" > Geocortex HTML5 Web Viewer: </a></p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">Geocortex 5 Web was chosen as our initial solution for our problem based on our understanding of the platform being 
+			an enhanced method to display Esri web maps with greater options of customization (admittedly, our understanding of Geocortex as a whole 
+			was very limited prior to our development work). Additionally, Geocortex products are an important aspect of our collaborative project which 
+			also factored in to why it was chosen so that we may gain valuable experience. </p>
 	</div>
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Initial Set-up and Configuration:</p>
 	<div>
-		<img class="projectimage" alt="Configured ESRI Dashboard" src="images/dashboards.png">
+		<img class="projectimage" alt="Geocortex Layout" src="images\geocortexlayout.PNG">
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
-	<p class = homeSubHead> Sub Header</p>
+	<p class = "projectimagesubtext">Geocortex Web layout desgin.</p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">Prior to developing the Geocortex solution, we first created a basic vision of our desired layout. After the creation of the 
+			basic web map for integration with the application, Geocortex Web development could begin. </p>
+		<p class="generalText">Layout design and configuration was achieved by selecting and dragging components into the layout pane. The basic structure, 
+			or arrangement of the layout is created by adding Columns, Rows, Tabs, and Panels which are termed “Layout Components”. The sizing, control over 
+			sizing, and visibility can all be configured for each component added.</p>
+		<p class="generalText">During Layout Component placement, we concurrently added “Map Components”. These are the features that relate to interactivity 
+			and exploration of the map as the name suggests. Several Map Components are available, however, only a portion were used based on the needs as defined 
+			by the problem statement. Similar to the Layout Components, each Map Component can be configured but with added functionality in the form of Feature Actions. 
+			Feature Actions are what occurs after features in the map are identified (i.e results). These are pre-defined by Geocortex but do provide the option for 
+			modification (although no modifications were made in our solution; see Challenges section). For each Map Component added, Feature Actions were added/removed 
+			accordingly.</p>
+		<p class="generalText">After we achieved a layout complete with Feature Actions we were happy with, the final step was to test the application from the perspective 
+			of a user. This was important in identifying where certain functionality was not working as intended to direct further work and modification.</p>
 	</div>
 
-	<p class = homeSubHead> Sub Header</p>
+	<p class = homeSubHead>Challenges Along the Way:</p>
 	<div>
-		<img class="projectimage" alt="ESRI Dashboard" src="images/dashboards.png">
+		<img class="projectimage3" alt="Geocortex Command Example" src="images\geocortexfeatureaction.PNG">
 	</div>
-	<p class = "projectimagesubtext">Figure 1: Blah blah blah.</p>
+	<p class = "projectimagesubtext">An example Command, viewing the custom command design interface for the default pre-configured Draw command.</p>
 	<div>
-		<p class="generalText"> Example text describing the task, what progess was made, and any hurdles encountered along the way.</p>
+		<p class="generalText">One of the first challenges we encountered was what we considered to be a lack of available documentation to aid with development. Help 
+			documentation that we have come to expect for Esri products are in stark contrast to what we were able to find for Geocortex. This presented us with the challenge 
+			of having to rely more on experimentation to develop a stronger understanding.</p>
+		<p class="generalText">Although this was a relatively minor challenge, even just learning how to utilize components in creating the layout was a challenging at first. 
+			The process of dragging components to the layout pane, learning how the hierarchy of rows and columns worked, and configuring their sizes and visibility took some 
+			time to become comfortable with. We also encountered a bug which prevented the map component (arguably the most important one) from allowing us to select a map! 
+			This bug occurs (in v5.5) when a blank layout is created, but we were fortunate to find forum confirming that this was indeed a bug and that a workaround existed 
+			(delete all components except for the map component from one of the default layout options).</p>
+		<p class="generalText">Utilizing Feature Actions was source of major time investment. As mentioned, going into development we had little knowledge of Geocortex. Initially, 
+			we assumed that Feature Actions would have the ability to customize many different aspects of interacting with features such as customizing drawn polygon colours, the 
+			attributes that display when a feature is selected, etc. We gathered as much documentation as we find on this topic (some of the best resources ended up being short 
+			YouTube videos produced by Geocortex), which certainly helped, but did not answer all of our questions.</p>
+		<p class="generalText">It became clear to us that to achieve some of the functionality we had envisioned would require the use of Workflows. As we began researching how to 
+			utilize Workflows, it also became clear that this would not be a simple task. Our problem statement did not call for the explicit use of Workflows, and we therefore did 
+			not budget enough time to effectively learn an implement this aspect in to our solution.</p>
+		<p class="generalText">Lastly, we encountered issues with how certain attributes controlled by arcade expression in the web map displayed in Geocortex. For example, an 
+			expression that counts the number of features within a neighbourhood polygon and then displays the result in a popup when the feature is identified did not work in 
+			Geocortex. Again, we were not able to find documentation to assist us with this problem, thus the issue still exists in our solution.</p>
+	</div>
+	<div>
+		<img class="projectimage2" alt="Geocortex Error Arcade" src="images\geocortexarcadeerror.PNG">
+	</div>
+	<p class = "projectimagesubtext">An example failing of web map arcade expressions in Geocortex Web.</p>
+
+	<p class = homeSubHead>Future Directions:</p>
+
+	<div>
+		<p class="generalText">Our development work in Geocortex Web has shown us the difficulty that comes when you cannot rely on copious sources of documentation and guides. 
+			Geocortex can provide so much more than what we produced but will require us to invest significantly more time into exploration and testing to be able to capitalize on it. 
+			A good first step will be to dedicate ample time to learning how to implement Workflows, beginning with a relatively simple example and building our knowledge and experience 
+			from there.</p>
 	</div>
 </div>
 
