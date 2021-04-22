@@ -345,6 +345,11 @@ li a:hover{
 
 /* ################# Images ################# */
 
+
+.move1 {
+	margin-left:450px;
+}
+
 .headshot{
 	border-radius: 100%;
 	margin-right:30px;
